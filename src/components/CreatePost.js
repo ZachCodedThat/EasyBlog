@@ -24,7 +24,8 @@ import {
 } from "./../styles/colorModeStyles";
 
 /* 
-This Component is the main mechanism for creating a new blog post, it takes all of the necessary data and converts it to JSON and sends it to my DB.
+This Component is the main mechanism for creating a new blog post, 
+it takes all of the necessary data and converts it to JSON and sends it to my DB.
 */
 
 const CreatePost = () => {
@@ -61,7 +62,13 @@ const CreatePost = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <Stack direction="column" justify="center" align="center">
+    <Stack
+      direction="column"
+      justify="center"
+      align="center"
+      mt={2}
+      minHeight={"100vh"}
+    >
       <Flex
         direction="column"
         justify="center"
@@ -129,6 +136,9 @@ const CreatePost = () => {
             >
               <SlateEditor value={body} setValue={setBody} />
             </Box>
+            {/* <Box m={5} maxW="1000px" overflowWrap="normal">
+              {JSON.stringify(body)}
+            </Box> */}
           </FormControl>
           <Button
             size="lg"

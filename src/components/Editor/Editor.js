@@ -240,9 +240,9 @@ const withImages = (editor) => {
         }
       }
     } else if (isImageUrl(text)) {
-      insertImage(editor, text);
+      insertImage(editor, text + " ");
     } else {
-      insertData(data);
+      insertData(data, text);
     }
   };
 

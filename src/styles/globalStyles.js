@@ -28,14 +28,9 @@ const GlobalStyle = ({ children }) => {
             color: #fefefe;
           }
 
-          html {
+          body {
             min-width: fit-content;
             scroll-behavior: smooth;
-          }
-          #__next {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
             background: ${colorMode === "light"
               ? backgroundLight
               : backgroundDark};
